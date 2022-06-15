@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Racing Sans One', cursive;
+}
+ body {
+    background-color: black;
+ }
+.main {
+    margin: 5% 0;
+    /* background-image: url('../images/desert.jpg'); */
+    animation: backg 2s infinite linear;
+}
+
+@keyframes backg {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0 600px;
+    }
+}
+
+.scores {
+    text-align: center;
+}
+.score {
+    font-size: 36px;
+    color: #d99230;
+}
+
+.score span {
+    color: #49b5da;
+    padding-left: 1em;
+}
+
+.game_scores{
+    display: flex;
+    justify-content: space-around;
+    font-size: 17px;
+}
+
+.your_score{
+    display: none;
+}
+
+.main_menu{
+    width: 600px;
+    height: 600px;
+    background-color: aqua;
+    display: block;
+    margin: 0 auto;
+    background-image: url('../images/menu_bg.jpg');
+    background-size: cover;
+    overflow: hidden;
+    /* padding-top: 2%; */
+    border-radius: 15px;
+}
+
+.main_menu_logo {
+    width: 80%;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.start_btn {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.car_game{
+    width: 600px;
+    height: 600px;
+    background-image: url('../images/road600.jpg');
+    background-size: cover;
+    background-repeat: repeat-y;
+    animation: move 2s infinite linear;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    display: none;
+}
+
+#game_over{
+    width: 25%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    display: none;
+}
+
+@keyframes move {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0 300px;
+    }
+}
